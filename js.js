@@ -7,13 +7,11 @@ function f1() {
         $('.inp').after(`<h2 class='display-4'>Parabéns, você tem ${(Number(idade) * 365).toLocaleString('pt-br')} dias de vida.</h2>`)
         $('.form-control').val('')
         $('h2').hide().fadeIn(1000)
-    }
-    $('.btn').on('click', function() {
+    }   
         window.scrollTo({
             top: document.body.scrollHeight,
             behavior: "smooth"
         })
-    })
 }
 
 
