@@ -8,6 +8,12 @@ function f1() {
         $('.form-control').val('')
         $('h2').hide().fadeIn(1000)
     }
+    $('.btn').on('click', function() {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth"
+        })
+    })
 }
 
 
